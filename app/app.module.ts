@@ -12,7 +12,7 @@ import { newTabsComponent } from './newTabs/newTabs.component';
 
 @NgModule({
   exports: [ MatTabsModule ],
-  imports:      [ BrowserModule, FormsModule, PortalModule],
+  imports:      [ BrowserModule, FormsModule, PortalModule, MatTabsModule],
   declarations: [ AppComponent, HelloComponent, TestComponent, newTabsComponent ],
   bootstrap:    [ AppComponent ],
   schemas: [ NO_ERRORS_SCHEMA ]

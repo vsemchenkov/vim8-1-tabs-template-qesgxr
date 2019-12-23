@@ -6,19 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: [ './newTabs.component.css' ]
 })
 export class newTabsComponent  {
-  public isDefault (newtabsID) {
-      if (newtabsID == 1) {
-        return true;
-      } else {
-        return false;
-      }
-  };
 
   public newtabs = [ 1, 2 ];
 
-  public changeTabs (newtabsID) {
-      
-  } 
+  public isActiveTab (newtabsID) {
+     if(newtabsID == 1) {
+       return true;
+     }
+  }
 
   public newdec() {
     this.newtabs = this.newtabs.slice(0, -1);

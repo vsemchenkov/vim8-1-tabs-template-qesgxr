@@ -8,7 +8,9 @@
 <br>
 
 <mat-tab-group>
-  <mat-tab *ngFor="let newtab of newtabs"  [ngClass]="{'default': isDefault(newtab)}">
+  <mat-tab *ngFor="let newtab of newtabs" label='{{newtab}}'
+    [ngClass]="{'cdk-focused': isActiveTab(newtab),'cdk-mouse-focused': isActiveTab(newtab), 'mat-tab-label-active': isActiveTab(newtab)}"
+  >
     
     <mat-tab-title>
       Tab <b>{{ newtab }}</b> title
