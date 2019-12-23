@@ -1,0 +1,21 @@
+<button (click)="newdec()">
+    Remove newtab
+</button>
+<button (click)="newinc()">
+    Add newtab
+</button>
+
+<br>
+
+<mat-tab-group>
+  <mat-tab *ngFor="let newtab of newtabs"  [ngClass]="{'default': isDefault(newtab)}">
+    
+    <mat-tab-title>
+      Tab <b>{{ newtab }}</b> title
+    </mat-tab-title>
+    <mat-tab-content>
+      Tab <b>{{ newtab }}</b> content
+      <test [newtab]="newtab"></test>
+    </mat-tab-content>
+  </mat-tab>
+</mat-tab-group>
