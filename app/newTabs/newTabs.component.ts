@@ -10,9 +10,7 @@ export class newTabsComponent  {
   public newtabs = [ 1, 2 ];
 
   public isActiveTab (newtabsID) {
-     if(newtabsID == 1) {
-       return true;
-     }
+     return true
   }
 
   public newdec() {
